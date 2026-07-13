@@ -19,9 +19,19 @@
 ## Reference Inference
 
 - PPT 캡처, 예시 슬라이드와 무드보드는 스타일 참고 자료로 우선 판단합니다.
-- 로고, 제품 사진과 인물 사진은 실제 사용 자료로 우선 판단합니다.
+- 실제 사진은 `visual_type: provided_photo` 또는 사용자의 명시적인 요청이 있을 때만 사용합니다.
+- 실제 사진이 없으면 사진풍 이미지를 생성하지 않고 편집 일러스트로 전환합니다.
+- 로고와 제품 사진은 사용 목적과 배치 지시를 확인합니다.
 - 파일의 용도가 결과에 큰 영향을 주면서 불분명할 때만 사용자에게 확인합니다.
 - 참조 이미지 속 텍스트보다 개요의 사실 정보와 `required_text`를 우선합니다.
+
+## Content And Visual Defaults
+
+- 기본 시각 표현은 현대적인 편집 일러스트입니다.
+- `visual_type`은 `illustration`, `diagram`, `typography`, `provided_photo` 중 하나로 해석합니다.
+- 슬라이드에는 `headline`과 2~4개의 `key_phrases`를 기본으로 반영하고, `takeaway`가 있으면 함께 반영합니다.
+- `key_phrases`를 단어 하나로 축약하거나 2개 미만으로 임의 삭제하지 않습니다.
+- 이전 형식의 `title`, `draft_copy`, `visual_direction`은 새 필드로 정리한 뒤 생성합니다.
 
 ## Resume And Revision
 
