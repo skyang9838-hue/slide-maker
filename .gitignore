@@ -1,0 +1,17 @@
+# User input and generated images
+넣을곳/*
+!넣을곳/.gitkeep
+결과물/*
+!결과물/.gitkeep
+지난결과/*
+!지난결과/.gitkeep
+
+# Internal run data
+.slide-maker/current-deck.md
+.slide-maker/current-run.md
+.slide-maker/runs/*
+!.slide-maker/runs/.gitkeep
+
+# OS/editor noise
+Thumbs.db
+.DS_Store
